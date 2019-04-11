@@ -1,3 +1,7 @@
+View code [here](https://github.com/OE-FET/OutputCurve/blob/master/src/Main.kt)
+
+![](https://i.imgur.com/YlXnUTz.png)
+
 # OutputCurve
 Here's a breakdown of the code
 
