@@ -155,6 +155,10 @@ fun runMeasurement() {
 
     }
 
+    // Turn off the SMUs now we're done
+    sourceDrain.turnOff()
+    sourceGate.turnOff()
+
     // We're done with these now
     results.finalise()
 
