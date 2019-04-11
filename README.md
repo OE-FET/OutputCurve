@@ -1,3 +1,5 @@
+![](https://i.imgur.com/YlXnUTz.png)
+
 # OutputCurve
 Here's a breakdown of the code
 
