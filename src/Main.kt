@@ -98,7 +98,7 @@ fun runMeasurement() {
 
     // Get the configured SMU channels
     val sourceDrain = sdSMU.getSMU()
-    val sourceGate = sgSMU.getSMU()
+    val sourceGate  = sgSMU.getSMU()
 
     // If either of them is null, then we can't continue
     if (sourceDrain == null || sourceGate == null) {
@@ -115,7 +115,7 @@ fun runMeasurement() {
     results.setUnits("V", "A", "V", "V", "A")
 
     // Plot SD Voltage (0) on x, SD Current (1) on y, split series by set SG voltage (2)
-    plot.watchList(results, 0, 1, 2)
+    plot.watchList(results, 0, 1, 2).apply { showMarkers(false) }
     table.watchList(results)
 
     // Configure source-drain SMU
