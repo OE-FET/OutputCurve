@@ -49,6 +49,7 @@ fun main() {
 
     val file   = params.addFileSave("Output File")
 
+    // Returns true if "OK" clicked, false otherwise
     val okay = params.showAndWait()
 
     if (!okay) {
@@ -71,14 +72,14 @@ fun main() {
     plot.show()
 
     // Configure source-drain SMU
-    sourceDrain.setVoltage(MIN_SD_V)
+    sourceDrain.setVoltage(minSDV.get())
     sourceDrain.useAutoRanges()
     sourceDrain.setCurrentLimit(10e-3)
     sourceDrain.useFourProbe(false)
     sourceDrain.turnOn()
 
     // Configure source-gate SMU
-    sourceGate.setVoltage(MIN_SG_V)
+    sourceGate.setVoltage(minSGV.get())
     sourceGate.useAutoRanges()
     sourceGate.setCurrentLimit(10e-3)
     sourceGate.useFourProbe(false)
