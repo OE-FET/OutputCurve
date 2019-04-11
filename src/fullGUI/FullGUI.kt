@@ -1,3 +1,5 @@
+package fullGUI
+
 import JISA.Control.ConfigStore
 import JISA.Experiment.ResultStream
 import JISA.GUI.*
@@ -67,15 +69,15 @@ fun main() {
         settings.setFieldsDisabled(true)
 
         // Set parameters to equal what is currently written in the GUI input fields
-        minSDV          = minSD.get()
-        maxSDV          = maxSD.get()
-        numSDV          = numSD.get()
-        minSGV          = minSG.get()
-        maxSGV          = maxSG.get()
-        numSGV          = numSG.get()
+        minSDV = minSD.get()
+        maxSDV = maxSD.get()
+        numSDV = numSD.get()
+        minSGV = minSG.get()
+        maxSGV = maxSG.get()
+        numSGV = numSG.get()
         integrationTime = intTime.get()
-        delayTime       = (delTime.get() * 1000).toLong() // convert to milliseconds
-        outputFile      = file.get()
+        delayTime = (delTime.get() * 1000).toLong() // convert to milliseconds
+        outputFile = file.get()
 
         // Run the experiment
         runMeasurement()
