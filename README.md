@@ -1,5 +1,3 @@
-![](https://i.imgur.com/YlXnUTz.png)
-
 # JISA Output Curve Example Code
 This repository contains three Kotlin programs that use JISA to perform an output measurement on a transistor using SMUs.
 
